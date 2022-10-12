@@ -24,7 +24,13 @@
         This is a crowdsourced map for attendees' notable Cleveland places. 
         These places can be a place with a fond memory, a place you get lost, or a favorite place you frequent. <br><br>
         
-        Put a pin down, and check out the notable places from other Data Days attendees as well. 
+        Put a pin down, and check out the notable places from other Data Days attendees as well. <br><br>
+
+        Pins on the map are labeled as the following<br><br>
+
+        F = a favorite place<br>
+        M = a memorable place<br>
+        L = a place that's easy to get lost at
       </p>
       <form id="placeForm" method="post" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScKxwDh9TheIDBsAJGGF_OTzmyQ7pI-DyowI6aCNutj3y_zkA/formResponse" 
         target="hidden_iframe" onsubmit="submitted=true;">
@@ -41,7 +47,7 @@
         </div>
 
         <div class="book-input">
-          <label for="categoryOfPlace">Category of Place (exactly as written: "lost", "memory", "favorite")<span class="required"> *</span></label>
+          <label for="categoryOfPlace">Category of Place <span class="required"> *</span> <br>(exactly as written: "lost", "memory", or "favorite")</label>
           <input required id="categoryOfPlace" aria-label="Category of Place" name="entry.778829194" required>
         </div>
 
