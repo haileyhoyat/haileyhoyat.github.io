@@ -134,6 +134,14 @@ window.addEventListener("load", function () {
   function sendData() {
     let a = document.querySelector('input#location').value;
     const geo = new google.maps.Geocoder();
+    
+    //error handling for category of place
+    if(document.querySelector("input#categoryOfPlace").value !== "lost" && document.querySelector("input#categoryOfPlace").value !== "memory" && document.querySelector("input#categoryOfPlace").value !== "favorite")
+    {
+      alert("Please make sure your Category of Place is either 'lost', 'favorite', or 'memory'.");
+      return;
+    }
+    
     geo.geocode({"address" : a }, function(result, status) {
       if (status == google.maps.GeocoderStatus.OK) {
         let lat = result[0].geometry.location.lat();
