@@ -1,0 +1,475 @@
+/*
+
+Reflux Template
+
+https://templatemo.com/tm-531-reflux
+
+*/
+
+@import url(fontawesome.css);
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#page-wraper {
+    background: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+}
+
+
+/* Basic */
+
+body {
+    overflow-x: hidden;
+    background-color: rgb(224, 224, 224);
+}
+
+input,
+select,
+textarea {
+    outline: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(0, 0, 0);
+}
+
+h4 {
+    font-size: 26px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.25px;
+}
+
+img {
+    width: 100%;
+    overflow: hidden;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+/* Sidebar Menu */
+.main-nav {
+    text-align: center;
+}
+
+.main-nav li:last-child a {
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.main-nav li {
+    display: block;
+}
+
+.main-nav li a {
+    height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    width: 100%;
+    transition: all 0.5s;
+    border-top: 2px solid rgb(0, 0, 0);
+}
+
+.main-nav li:hover a,
+.main-nav li.active a {
+    background: #fff;
+    color: #8c363e;
+}
+
+.menu .image {
+    margin-top: 60px;
+}
+
+.menu .image img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.menu .author-content {
+    margin: 40px 0px 60px 0px;
+}
+
+.menu .author-content h4 {
+    margin-bottom: 0px;
+}
+
+.menu .author-content span {
+    font-size: 13px;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+}
+
+.menu .social-network {
+    margin-top: 60px;
+}
+
+.menu .social-network ul li {
+    margin: 0 3px;
+}
+
+.menu .social-network ul li a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+
+.menu .social-network ul li a:hover {
+    background-color: #fff;
+    color: #a43f49;
+}
+
+.menu:before,
+.menu:after {
+    content: "";
+    display: table;
+}
+
+.menu:after {
+    clear: both;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu::-webkit-scrollbar {
+    display: none;
+}
+
+.menu {
+    left: 10%;
+  -webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+  -webkit-overflow-scrolling: touch;
+  background-color: #a43f49;
+  box-sizing: border-box;
+  height: 100vh;  
+  max-height: 100vh !important;
+  max-width: 80vw !important;
+  min-width: 45px !important;
+  outline: none;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  padding: 0;
+  position: fixed !important;
+  top: calc(0px);  
+  width: 20%;
+  will-change: transform;
+  z-index: 9999 !important;
+}
+
+.menu-toggle {
+  color: #fff;
+  cursor: pointer;
+  font-size: 25px;
+  position: fixed;
+  right: 25px;
+  top: 25px;
+}
+
+#menu-toggle {
+    z-index: 999;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #a43f49;
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    display: inline-block;
+    line-height: 60px;
+}
+
+.menu-close {
+  cursor: pointer;
+}
+
+#menu-close {
+    cursor: pointer;
+    text-align: right;
+    color: #a43f49;
+    background-color: #fff;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    display: inline-block;
+    line-height: 60px;
+}
+
+
+/* Section */
+
+.section {
+    color: rgb(0, 0, 0);
+    width: 55%;
+    right: 10%;
+    left: 35%;
+    position: relative;
+    
+    padding-bottom: 0px;
+    border-bottom: 5px solid rgba(0, 0, 0, 1);
+}
+
+.section-heading {
+    text-align: center;
+    padding: 80px 45px;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+.section-heading .line-dec {
+    width: 60px;
+    height: 3px;
+    background-color: #a43f49;
+    margin: 10px auto;
+}
+
+.section-heading span {
+    margin-top: 5px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.5px;
+}
+
+/* My Work */
+
+section.my-work .section-heading {
+    text-align: center;
+    padding: 80px 45px 50px 45px;
+}
+
+.isotope-wrapper {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    color: rgb(0, 0, 0);
+}
+
+.isotope-box {
+    position: relative;
+    width: 100%;
+    padding-bottom: 40px;
+}
+/*
+.isotope-row {
+    display: flex;
+}
+*/
+.isotope-item {
+    position: relative;
+    width: 48%;
+    margin: 1%;
+    border-bottom: 2px solid rgba(250,250,250,0.1);
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+figure.snip1321 {
+    overflow: hidden;
+}
+
+figure.snip1321 div{
+    cursor: pointer; 
+    color: black; 
+    border: 2px solid black; 
+    border-radius: 5px;
+    text-align: center;
+}
+
+figure.snip1321 div div{
+    border: 0px; 
+    text-align: left;
+    margin: 5px;
+}
+
+@media screen and (max-width: 1680px) {
+    .menu {
+        left: 5%;
+    }
+
+    .section {
+        color: #fff;
+        width: 65%;
+        right: 5%;
+        left: 30%;
+    }
+}
+
+@media screen and (max-width: 1680px) and (min-width: 846px) { 
+    .menu .social-network ul li a {
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+    }
+
+    .menu .social-network ul li {
+        margin: 0;
+    }
+
+    .menu .image {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .menu {
+        left: 0%;
+    }
+
+    .right-image-post h4,
+    .left-image-post h4 {
+        margin-top: 0px;
+    }
+
+    .right-image-post p,
+    .left-image-post p {
+        margin-top: 15px;
+    }
+
+    .right-image-post .white-button,
+    .left-image-post .white-button {
+        margin-top: 25px;
+    }
+
+}
+
+.menu .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media screen and (max-width: 1280px) and (min-width: 846px) {
+    .menu {
+        width: 25%;
+    }
+}
+
+#menu-toggle,
+#menu-close {
+    display: none;
+}  
+
+@media screen and (max-width: 845px) {        
+    #menu-toggle,
+    #menu-close {
+        display: inline-block;
+    }    
+
+    .menu {        
+        width: 320px;
+        -webkit-transform: translateX(-100%) !important;
+        transform: translateX(-100%) !important;
+        transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+        transition: transform 233ms cubic-bezier(0, 0, 0.21, 1);
+        transition: transform 233ms cubic-bezier(0, 0, 0.21, 1), -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+    }
+
+    .menu .image {
+        margin-top: 40px;        
+    }
+
+    .menu .image img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .menu .author-content {
+        margin: 20px 0px 40px 0px;
+    }
+
+    .menu .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .menu.open {
+        display: inline-block;
+        -webkit-transform: translateX(0) !important;
+                transform: translateX(0) !important;
+    }
+
+    .responsive-nav {
+        display: inline-block;
+    }
+    .section {
+        width: 94%;
+        right: 3%;
+        left: 3%;
+    }
+    .isotope-item {
+        width: 94%;
+        margin: 3%;
+    }
+    .left-image-post img {
+        margin-bottom: 30px;
+    }
+    .right-image-post img {
+        margin-top: 30px;
+    }
+    .isotope-item {
+        border-bottom: none;
+        text-align: center;
+    }
+    .isotope-toolbar {
+        margin-bottom: 20px;
+    }
+}
