@@ -1,2 +1,2 @@
 # personal-website. 
-my portfolio.
+portfolio for Hailey Hoyat
