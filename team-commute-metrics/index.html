@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Team Commute Metrics</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="root">
+
+    <!-- Trigger/Open The Modal -->
+    <button id="modalButton">A Note From The Maker</button>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>A Note About This Piece</h2>
+        <p>
+          Hello! <br><br>
+          This is a web app that makes it easy to calculate aggregate metrics about your team's commute to work.
+          The hope is this web app can help teams show their leaders the concrete numbers of one of the many benefits of WFH, that being time saved from commuting.
+
+          <br><br>
+
+          A friend of mine, whom is a Director and in a position to influence decision makers at her company, noted to me early in the pandemic that she wished there was a way to 
+          "put some numbers to it to show to leadership", "it" refering to the benefits many teams in her company were experiencing from workng from home.   
+
+          <br><br>
+
+          So this got me thinking: what would those numbers be and what would they look like?
+          
+          <br><br>
+
+          The most basic benefit of WFH is time saved from commuting. Using this metric as my starting point, I asked myself how I would figure out the time I personally spend in a day/week/month/year 
+          commuting to work. For that, I would use Google Maps to get my trip time to the office, and make the proper calculations to get the time for a day, week, month, and year.
+
+          If I wanted to find the time spent commuting for me plus my colleague, I would do the same calculations that I did for myself for my colleague, and then add our times together. 
+
+          Then I would repeat this process for as many people as were on my team. 
+
+          And that's when I realized, this would make for a great web app. 
+
+          <br><br>
+
+          The purpose of this app is to make it easy to obtain the aggregate time your team spends commuting to work, so as to be able to compare your team's commute time pre- and post- the WFH phenomena. 
+          
+          <br><br>
+          <b>Version: 1.0</b><br>
+          <b>Tools Used: Google Maps API, VanillaJS</b>
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+  <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7L--PDxTQJQ9UaKtb-a7ymPoAmsR0gJo&callback=initMap&v=weekly"
+      defer
+    ></script>
+
+  <script src="index.js">
+  </script>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("modalButton");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+</body>
+
+</html>
